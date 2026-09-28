@@ -847,3 +847,40 @@ footer{display:none}
   .art-stack .ref-image{height:195px}
   .contact-ref h2{font-size:50px}
 }
+
+
+/* MOBILE REFERENCE HEADER — centered mark with compact menu */
+@media(max-width:800px){
+  .site-header{
+    position:absolute;
+    top:0;
+    height:54px;
+    padding:0 18px;
+    background:transparent;
+    border:0;
+  }
+  .site-header .brand{
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+    height:54px;
+  }
+  .site-header .brand img{width:64px;height:48px}
+  .menu-btn{
+    display:block;
+    position:absolute;
+    left:18px;
+    top:17px;
+    padding:0;
+    color:#ead6c4;
+    font:600 7px/1 Montserrat,Arial,sans-serif;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+  }
+  .menu-btn::after{content:"MENU"}
+  .menu-btn{font-size:0}
+  .nav{top:54px}
+  .hero-ref{padding-top:76px}
+  .hero-ref-logo{display:none}
+}
