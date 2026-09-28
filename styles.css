@@ -538,3 +538,33 @@ footer{display:none}
   .contact-actions{flex-direction:column;gap:12px}
   .contact-actions .btn,.contact-actions .btn-gold,.contact-actions .btn-outline,.contact-actions .btn-outline:last-child{width:230px;height:54px}
 }
+
+
+/* PIXEL MATCH v6 — reference typography/rendering */
+html,body{
+  background:#f8f1e6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+body{font-family:Montserrat,Arial,sans-serif}
+.contact-box h2{
+  font-family:"Cormorant Garamond",serif;
+  font-weight:500;
+  font-style:normal;
+  text-rendering:geometricPrecision;
+}
+.contact-box h2 em{
+  font-family:"Cormorant Garamond",serif;
+  font-weight:600;
+}
+.contact-box .eyebrow,
+.contact-box>p:not(.eyebrow),
+.contact-actions .btn,
+.contact-box small,
+.nav a{
+  font-family:Montserrat,Arial,sans-serif;
+}
+@media(min-width:801px){
+  .contact-box h2{font-size:92px}
+}
