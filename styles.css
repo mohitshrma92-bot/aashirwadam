@@ -399,3 +399,142 @@ footer p{color:var(--gold)}
   .contact-actions{flex-direction:column;align-items:center}
   .contact-actions .btn{width:min(250px,100%)}
 }
+
+
+/* REFERENCE MATCH — visible enquiry composition */
+.site-header{
+  height:112px;
+  padding:0 8.3vw;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#0f0d0b;
+}
+.brand{display:flex;align-items:center;height:100%}
+.brand img{width:78px;height:70px;object-fit:contain}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:39px;
+  margin-left:auto;
+}
+.nav a{
+  color:#eee3d2;
+  text-transform:uppercase;
+  font-size:10px;
+  line-height:1;
+  letter-spacing:2.1px;
+  font-weight:500;
+}
+
+.contact{
+  min-height:calc(100vh - 112px);
+  box-sizing:border-box;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  background:#f8f1e6;
+  padding:113px 30px 105px;
+}
+.contact-box{
+  width:100%;
+  max-width:980px;
+  margin:0 auto;
+  text-align:center;
+}
+.contact-box .eyebrow{
+  margin:0 0 23px;
+  color:#c18432;
+  font-family:Montserrat,Arial,sans-serif;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:4px;
+}
+.contact-box h2{
+  margin:0 auto 40px;
+  max-width:900px;
+  color:#281913;
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(70px,5.35vw,92px);
+  font-weight:500;
+  line-height:.96;
+  letter-spacing:-2.2px;
+}
+.contact-box h2 em{
+  color:#c58c3c;
+  font-style:normal;
+}
+.contact-box>p:not(.eyebrow){
+  max-width:700px;
+  margin:0 auto 42px;
+  color:#775f4c;
+  font-family:Montserrat,Arial,sans-serif;
+  font-size:15px;
+  line-height:1.95;
+}
+.contact-actions{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+}
+.contact-actions .btn{
+  height:61px;
+  min-width:0;
+  box-sizing:border-box;
+  padding:0 31px;
+  border-radius:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Montserrat,Arial,sans-serif;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:2.1px;
+  text-transform:uppercase;
+}
+.contact-actions .btn-gold{
+  width:188px;
+  background:#bd873b;
+  border:1px solid #bd873b;
+  color:#fff9ef;
+}
+.contact-actions .btn-outline{
+  width:136px;
+  background:transparent;
+  border:1px solid #c7904a;
+  color:#a16c2d;
+}
+.contact-actions .btn-outline:last-child{width:147px}
+.contact-box small{
+  display:block;
+  margin-top:36px;
+  color:#b09376;
+  font-family:Montserrat,Arial,sans-serif;
+  font-size:9px;
+  line-height:1.5;
+  letter-spacing:.05px;
+}
+footer{display:none}
+
+@media(max-width:800px){
+  .site-header{height:74px;padding:0 6vw}
+  .brand img{width:78px;height:60px}
+  .nav{top:74px}
+  .contact{
+    min-height:calc(100vh - 74px);
+    padding:85px 22px 70px;
+  }
+  .contact-box h2{
+    font-size:clamp(53px,12vw,76px);
+    letter-spacing:-1.4px;
+  }
+}
+@media(max-width:520px){
+  .contact{padding:70px 18px 60px}
+  .contact-box .eyebrow{font-size:9px;letter-spacing:3px}
+  .contact-box h2{font-size:51px;line-height:.98}
+  .contact-box>p:not(.eyebrow){font-size:13px;margin-bottom:30px}
+  .contact-actions{flex-direction:column;gap:12px}
+  .contact-actions .btn,.contact-actions .btn-gold,.contact-actions .btn-outline,.contact-actions .btn-outline:last-child{width:230px;height:54px}
+}
