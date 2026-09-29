@@ -34,7 +34,7 @@ section{padding:clamp(72px,11vw,160px) 0}
 .ph{position:relative;background:var(--tone,var(--bg2));overflow:hidden}
 .ph::after{content:attr(data-cap);position:absolute;left:14px;bottom:12px;right:14px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75)}
 .ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.14),transparent 55%);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
-.ph:hover::before{transform:scale(1.08)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.ph:hover::before{transform:scale(1.08)}
 /* header */
 header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .5s,border-color .5s;border-bottom:1px solid transparent}
 header.solid{background:var(--bg);border-color:var(--line)}
@@ -141,39 +141,44 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 <div class="rv"><div class="label" style="margin-bottom:20px">The Philosophy</div><h2>More than a gift.<br><em>A blessing.</em></h2>
 <p style="margin-top:32px">In Indian homes, a gift has never been only an object. It is a wish for prosperity, a new beginning honoured, a bond acknowledged.</p>
 <p>Aashirwadam gives that tradition a contemporary form: richly detailed presentation boxes and refined gold and silver plated devotional pieces, presented so the blessing is felt before the box is opened.</p></div>
-<div class="ph rv" style="--tone:#B98A7A" data-cap="Editorial image · hands presenting a gift"></div></div></section>
+<div class="ph rv" style="--tone:#B98A7A"><img src="images/shrinathji-lifestyle.webp" alt="Shrinathji gold-plated puja box with petals and flowers" loading="lazy"></div></div></section>
 
 <section id="collections" style="padding-top:0"><div class="wrap sec-head"><div><div class="label" style="margin-bottom:16px">Signature Collections</div><h2>Six ways to<br><em>bless.</em></h2></div><a class="btn ghost" href="#contact">View all collections</a></div>
 <div class="rail">
-<div class="col"><div class="ph" style="--tone:#5E1420" data-cap="Prosperity"></div><h3>Prosperity</h3><p>Lakshmi · Ganesh · Saraswati</p><a href="#contact">Enquire</a></div>
-<div class="col"><div class="ph" style="--tone:#8A9A7E" data-cap="Shubh Labh"></div><h3>Shubh Labh</h3><p>Auspicious beginnings</p><a href="#contact">Enquire</a></div>
-<div class="col"><div class="ph" style="--tone:#B98A7A" data-cap="Divine Harmony"></div><h3>Divine Harmony</h3><p>Radha · Krishna · Togetherness</p><a href="#contact">Enquire</a></div>
-<div class="col"><div class="ph" style="--tone:#A98847" data-cap="Ganeshji"></div><h3>Ganeshji</h3><p>Wisdom · Prosperity · New beginnings</p><a href="#contact">Enquire</a></div>
-<div class="col"><div class="ph" style="--tone:#7A2130" data-cap="Shrinathji"></div><h3>Shrinathji</h3><p>Devotion · Grace · Prosperity</p><a href="#contact">Enquire</a></div>
-<div class="col"><div class="ph" style="--tone:#6C7A62" data-cap="Kuber · Lakshmi"></div><h3>Kuber · Lakshmi</h3><p>Abundance · Good fortune</p><a href="#contact">Enquire</a></div>
+<div class="col"><div class="ph" style="--tone:#5E1420"><img src="images/prosperity.webp" alt="Lakshmi Ganesh Saraswati puja box" loading="lazy"></div><h3>Prosperity</h3><p>Lakshmi · Ganesh · Saraswati</p><a href="#contact">Enquire</a></div>
+<div class="col"><div class="ph" style="--tone:#8A9A7E"><img src="images/shubh-labh.webp" alt="Lakshmi Ganesh puja box with Shubh Labh plaques" loading="lazy"></div><h3>Shubh Labh</h3><p>Auspicious beginnings</p><a href="#contact">Enquire</a></div>
+<div class="col"><div class="ph" style="--tone:#B98A7A"><img src="images/radha-krishna.webp" alt="Radha Krishna puja box" loading="lazy"></div><h3>Divine Harmony</h3><p>Radha · Krishna · Togetherness</p><a href="#contact">Enquire</a></div>
+<div class="col"><div class="ph" style="--tone:#A98847"><img src="images/ganeshji.webp" alt="Ganeshji yantram box" loading="lazy"></div><h3>Ganeshji</h3><p>Wisdom · Prosperity · New beginnings</p><a href="#contact">Enquire</a></div>
+<div class="col"><div class="ph" style="--tone:#7A2130"><img src="images/shrinathji.webp" alt="Shrinathji puja box" loading="lazy"></div><h3>Shrinathji</h3><p>Devotion · Grace · Prosperity</p><a href="#contact">Enquire</a></div>
+<div class="col"><div class="ph" style="--tone:#6C7A62"><img src="images/kuber-lakshmi.webp" alt="Kuber Lakshmi puja box" loading="lazy"></div><h3>Kuber · Lakshmi</h3><p>Abundance · Good fortune</p><a href="#contact">Enquire</a></div>
+</div></section>
+
+<section id="yantram" style="padding-top:0"><div class="wrap sec-head"><div><div class="label" style="margin-bottom:16px">The Yantram Collection</div><h2>Compact.<br><em>Sacred.</em></h2></div><a class="btn ghost" href="#contact">Enquire about yantrams</a></div>
+<div class="rail">
+<div class="col"><div class="ph"><img src="images/yantram-lakshmi-ganesh.webp" alt="Lakshmi Ganesh yantram box" loading="lazy"></div><h3>Lakshmi Ganesh Yantram</h3><p>Prosperity · Auspicious beginnings</p><a href="#contact">Enquire</a></div><div class="col"><div class="ph"><img src="images/yantram-lakshmi-saraswati-ganesh.webp" alt="Lakshmi Saraswati Ganesh yantram box" loading="lazy"></div><h3>Lakshmi Saraswati Ganesh</h3><p>Wealth · Knowledge · Wisdom</p><a href="#contact">Enquire</a></div><div class="col"><div class="ph"><img src="images/yantram-radha-krishna.webp" alt="Radha Krishna 3D yantram box" loading="lazy"></div><h3>Radha Krishna Yantram</h3><p>Love · Devotion · Togetherness</p><a href="#contact">Enquire</a></div>
 </div></section>
 
 <section class="exp"><div class="wrap"><div class="label" style="margin-bottom:16px">The Signature Experience</div>
 <h2 class="rv">When a blessing<br>becomes a <em>keepsake.</em></h2>
 <div class="steps">
-<div class="step rv"><div class="ph" style="--tone:#5E1420" data-cap="Packaging"></div><b>The box</b><span>A richly detailed 3D presentation box, made to be kept.</span></div>
-<div class="step rv"><div class="ph" style="--tone:#A98847" data-cap="Finish macro"></div><b>The finish</b><span>Gold and silver plating, with refined detailing.</span></div>
-<div class="step rv"><div class="ph" style="--tone:#B98A7A" data-cap="Opening"></div><b>The opening</b><span>An unboxing designed to be remembered.</span></div>
-<div class="step rv"><div class="ph" style="--tone:#8A9A7E" data-cap="In its home"></div><b>The keepsake</b><span>Set in a home, an office, a new beginning.</span></div>
+<div class="step rv"><div class="ph" style="--tone:#5E1420"><img src="images/gift-boxes.webp" alt="Carved wooden presentation boxes" loading="lazy"></div><b>The box</b><span>A richly detailed 3D presentation box, made to be kept.</span></div>
+<div class="step rv"><div class="ph" style="--tone:#A98847"><img src="images/finish.webp" alt="Gold and silver plated Lakshmi Ganesh panel" loading="lazy"></div><b>The finish</b><span>Gold and silver plating, with refined detailing.</span></div>
+<div class="step rv"><div class="ph" style="--tone:#B98A7A"><img src="images/opening.webp" alt="Opened Lakshmi Saraswati Ganesh box" loading="lazy"></div><b>The opening</b><span>An unboxing designed to be remembered.</span></div>
+<div class="step rv"><div class="ph" style="--tone:#8A9A7E"><img src="images/lakshmi-ganesh.webp" alt="Lakshmi Ganesh puja box in a home setting" loading="lazy"></div><b>The keepsake</b><span>Set in a home, an office, a new beginning.</span></div>
 </div></div></section>
 
 <section id="occasions"><div class="wrap"><div class="label" style="margin-bottom:16px">Shop by Occasion</div>
 <div class="occ"><div><h2 style="margin-bottom:40px">Gift for the <em>why.</em></h2>
 <ul id="ol">
-<li class="on" data-t="#5E1420" data-c="Diwali">Diwali</li><li data-t="#A98847" data-c="Dhanteras">Dhanteras</li><li data-t="#B98A7A" data-c="Weddings">Weddings</li><li data-t="#8A9A7E" data-c="Housewarming">Housewarming</li><li data-t="#7A2130" data-c="New Beginnings">New Beginnings</li><li data-t="#3B0D15" data-c="Corporate Gifting">Corporate Gifting</li><li data-t="#6C7A62" data-c="Client Appreciation">Client Appreciation</li><li data-t="#8C6A52" data-c="Employee Gifting">Employee Gifting</li></ul></div>
-<div class="ph" id="op" style="--tone:#5E1420" data-cap="Diwali"></div></div></div></section>
+<li class="on" data-t="#5E1420" data-c="Diwali" data-i="images/prosperity.webp">Diwali</li><li data-t="#A98847" data-c="Dhanteras" data-i="images/kuber-lakshmi.webp">Dhanteras</li><li data-t="#B98A7A" data-c="Weddings" data-i="images/shubh-labh.webp">Weddings</li><li data-t="#8A9A7E" data-c="Housewarming" data-i="images/shrinathji-lifestyle.webp">Housewarming</li><li data-t="#7A2130" data-c="New Beginnings" data-i="images/ganeshji.webp">New Beginnings</li><li data-t="#3B0D15" data-c="Corporate Gifting" data-i="images/corporate.webp">Corporate Gifting</li><li data-t="#6C7A62" data-c="Client Appreciation" data-i="images/gift-boxes.webp">Client Appreciation</li><li data-t="#8C6A52" data-c="Employee Gifting" data-i="images/radha-krishna.webp">Employee Gifting</li></ul></div>
+<div class="ph" id="op" style="--tone:#5E1420" data-cap="Diwali"><img src="images/prosperity.webp" alt=""></div></div></div></section>
 
 <section class="corp" id="corporate"><div class="wrap split">
 <div><div class="label" style="margin-bottom:20px">Corporate Gifting</div><h2>Make corporate gifting<br><em>more meaningful.</em></h2>
 <p style="margin-top:28px">Thoughtfully curated devotional keepsakes for clients, employees, channel partners and business milestones.</p>
 <ul class="caps"><li>Bulk gifting</li><li>Customisation</li><li>Branding</li><li>Personalised packaging</li><li>Employee gifting</li><li>Client gifting</li><li>Dealer / channel gifting</li><li>Festival gifting</li></ul>
 <div class="row"><a class="btn light" href="#contact">Request Corporate Catalogue</a><a class="btn ghost light" href="https://wa.me/919967782708">Speak to Our Team</a></div></div>
-<div class="ph" style="--tone:#3B0D15;aspect-ratio:4/5" data-cap="Branded gift box · boardroom desk"></div></div></section>
+<div class="ph" style="--tone:#3B0D15;aspect-ratio:4/5"><img src="images/corporate.webp" alt="Carved corporate gift box" loading="lazy"></div></div></section>
 
 <section><div class="wrap"><div class="label" style="margin-bottom:16px">The Aashirwadam Difference</div><h2>Meaning in every <em>detail.</em></h2>
 <div class="pillars">
@@ -183,19 +188,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 <div class="rv"><h3>Emotion</h3><p>Gifts that communicate gratitude, blessings and good wishes.</p></div>
 </div></div></section>
 
-<section class="film"><div class="ph" data-cap="Brand film · slow-motion loop (to be shot)"><div class="in"><div class="label">Visual Story</div><h2 style="margin-top:16px">A gift is more than<br><em style="color:#D8BE84">what's inside.</em></h2><button class="play" aria-label="Play film"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 2l12 7-12 7z" fill="currentColor"/></svg></button></div></div></section>
 
-<section><div class="wrap"><div class="label" style="margin-bottom:24px">Kind Words</div>
-<div class="quote">“Testimonial from a verified client goes here.”</div>
-<p style="margin-top:20px;font-size:13px">[VERIFY] Add name, company and written permission.</p>
-<div class="logos"><div>Client logo</div><div>Client logo</div><div>Client logo</div><div>Client logo</div></div>
-<div class="stats"><div><b>[ ]</b>Gifts delivered</div><div><b>[ ]</b>Years of craft</div><div><b>[ ]</b>Corporate clients</div><div><b>[ ]</b>Event collaborations</div></div></div></section>
+
+
 
 <section id="journal" style="padding-top:0"><div class="wrap"><div class="sec-head"><div><div class="label" style="margin-bottom:16px">Journal</div><h2>The art of <em>gifting.</em></h2></div></div>
 <div class="posts">
-<a class="post" href="#journal"><div class="ph" style="--tone:#B98A7A" data-cap="Article"></div><span class="label">Symbolism</span><h3>The meaning of gifting Lakshmi and Ganesh</h3></a>
-<a class="post" href="#journal"><div class="ph" style="--tone:#5E1420" data-cap="Article"></div><span class="label">Corporate</span><h3>Corporate gifting etiquette, done well</h3></a>
-<a class="post" href="#journal"><div class="ph" style="--tone:#A98847" data-cap="Article"></div><span class="label">Festive</span><h3>Diwali gifting ideas that mean more</h3></a>
+<a class="post" href="#journal"><div class="ph" style="--tone:#B98A7A"><img src="images/prosperity.webp" alt="Lakshmi Ganesh gifting" loading="lazy"></div><span class="label">Symbolism</span><h3>The meaning of gifting Lakshmi and Ganesh</h3></a>
+<a class="post" href="#journal"><div class="ph" style="--tone:#5E1420"><img src="images/corporate.webp" alt="Corporate gift box" loading="lazy"></div><span class="label">Corporate</span><h3>Corporate gifting etiquette, done well</h3></a>
+<a class="post" href="#journal"><div class="ph" style="--tone:#A98847"><img src="images/gift-boxes.webp" alt="Festive gift boxes" loading="lazy"></div><span class="label">Festive</span><h3>Diwali gifting ideas that mean more</h3></a>
 </div></div></section>
 
 <section class="final" id="contact"><div class="wrap"><h2>Let's create a gift<br>that <em>means more.</em></h2>
@@ -222,7 +223,7 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 var op=document.getElementById('op');
 document.querySelectorAll('#ol li').forEach(function(li){
-function on(){document.querySelectorAll('#ol li').forEach(function(x){x.classList.remove('on')});li.classList.add('on');op.style.setProperty('--tone',li.dataset.t);op.setAttribute('data-cap',li.dataset.c)}
+function on(){document.querySelectorAll('#ol li').forEach(function(x){x.classList.remove('on')});li.classList.add('on');op.style.setProperty('--tone',li.dataset.t);op.setAttribute('data-cap',li.dataset.c);op.querySelector('img').src=li.dataset.i}
 li.addEventListener('mouseenter',on);li.addEventListener('click',on)});
 })();
 </script>
