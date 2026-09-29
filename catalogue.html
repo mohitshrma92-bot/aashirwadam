@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Aashirwadam Creations — product catalogue and collections.">
+<title>Aashirwadam | Catalogue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<style>
+:root{--cream:#f9f4eb;--ink:#321d19;--muted:#806f60;--wine:#651a29;--gold:#b08b4e;--line:#ddd2c3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Montserrat,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.header{position:sticky;top:0;z-index:20;height:74px;background:rgba(38,11,16,.97);display:grid;grid-template-columns:44px 1fr auto;align-items:center;padding:0 5vw}
+.header .logo{justify-self:center;height:58px;display:flex;align-items:center}.header .logo img{width:70px;height:54px;object-fit:contain}
+.menu{width:28px;height:28px;display:flex;flex-direction:column;justify-content:center;gap:5px}.menu span{height:1px;width:21px;background:#f6eadb}
+.enquire{height:34px;padding:0 18px;border:1px solid #c59a5d;color:#f7eee2;text-decoration:none;text-transform:uppercase;letter-spacing:1.7px;font-size:8px;font-weight:600;display:flex;align-items:center}
+.hero{min-height:72vh;background:radial-gradient(circle at 50% 38%,rgba(177,133,70,.24),transparent 30%),linear-gradient(180deg,#22090f,#651a29 55%,#3b0d15);color:#fff6ec;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 7vw 75px}
+.hero img{width:min(360px,68vw);max-height:230px;object-fit:contain;margin-bottom:22px}.eyebrow{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600}.hero h1{font:500 clamp(55px,7vw,94px)/.88 "Cormorant Garamond",serif;margin:12px 0}.hero h1 em{font-style:normal;color:#d4a461}.hero p{max-width:650px;margin:20px auto;color:#dfcabe;font-size:11px;line-height:1.8}
+.wrap{max-width:1180px;margin:auto;padding:90px 6vw}.label{font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600}.intro h2,.collection h2{font:500 clamp(46px,6vw,78px)/.9 "Cormorant Garamond",serif;margin:14px 0 22px}.intro h2 em,.collection h2 em{color:var(--gold);font-style:normal}.intro p,.collection .copy{max-width:760px;color:var(--muted);font-size:11px;line-height:1.9}
+.collection{border-top:1px solid var(--line);padding-top:72px;margin-top:20px}.collection-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:38px}.card{border:1px solid var(--line);background:#f5ede1}.card img{display:block;width:100%;aspect-ratio:1.15;object-fit:cover}.card-body{padding:20px}.card h3{font:500 29px/1 "Cormorant Garamond",serif;margin:0 0 7px}.card p{font-size:8px;color:var(--muted);line-height:1.6;margin:0}
+.marketing{margin-top:28px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:500 20px/1.2 "Cormorant Garamond",serif;color:#5a4136}.marketing span{display:block;font:600 7px/1 Montserrat,Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.format{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.format div{padding:24px;border:1px solid var(--line)}.format h4{font:500 27px/1 "Cormorant Garamond",serif;margin:0 0 9px}.format p{font-size:9px;color:var(--muted);line-height:1.7}
+.cta{background:#681b2a;color:#f8ede2;text-align:center;padding:90px 7vw}.cta h2{font:500 clamp(48px,6vw,76px)/.9 "Cormorant Garamond",serif;margin:12px 0 20px}.cta p{max-width:620px;margin:auto auto 26px;color:#e6cfc2;font-size:10px;line-height:1.8}.btn{display:inline-flex;height:44px;padding:0 25px;align-items:center;justify-content:center;text-decoration:none;text-transform:uppercase;letter-spacing:1.5px;font-size:8px;font-weight:600}.btn-gold{background:#b08c4e;color:#fff8ed}
+.footer{padding:60px 7vw;text-align:center;background:#210c11;color:#bca597}.footer img{width:150px;max-height:95px;object-fit:contain}.footer p{font-size:8px;letter-spacing:2px;text-transform:uppercase}
+@media(max-width:700px){.header{height:58px;padding:0 18px}.header .logo{height:58px}.header .logo img{width:62px;height:46px}.enquire{height:30px;min-width:86px;padding:0 12px;font-size:7px}.hero{min-height:66vh;padding:82px 20px 55px}.hero img{width:250px;height:170px}.wrap{padding:65px 20px}.collection-grid,.format{grid-template-columns:1fr}.collection-grid{gap:16px}.card img{aspect-ratio:1.2}.cta{padding:70px 20px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <a class="menu" href="index.html#home" aria-label="Back to home"><span></span><span></span><span></span></a>
+  <a class="logo" href="index.html#home"><img src="icon only.png" alt="Aashirwadam Creations"></a>
+  <a class="enquire" href="index.html#contact">Enquiry</a>
+</header>
+
+<section class="hero">
+  <div>
+    <img src="for Dark background.png" alt="Aashirwadam Creations">
+    <div class="eyebrow">Aashirwadam Creations · Catalogue</div>
+    <h1>Gifts that<br><em>carry meaning.</em></h1>
+    <p>Tradition. Craftsmanship. Emotion.</p>
+    <p>Discover a curated collection of premium devotional gifts inspired by India's timeless spiritual traditions — from beautifully detailed 3D presentation boxes to elegant gold and silver plated deities.</p>
+  </div>
+</section>
+
+<main>
+<section class="wrap intro">
+  <div class="label">The Collection</div>
+  <h2>More than a gift.<br><em>A blessing.</em></h2>
+  <p>Whether celebrating a new beginning, a festival, a wedding, a business milestone or a cherished relationship, choose a gift that carries a message beyond the occasion.</p>
+  <p><strong>Celebrate Tradition. Gift Meaning. Create Memories.</strong></p>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Collection 01</div>
+  <h2>Prosperity <em>Collection.</em></h2>
+  <p class="copy"><strong>Prosperity. Wisdom. Auspicious Beginnings.</strong><br><br>A beautifully crafted devotional keepsake bringing together the timeless symbolism of Goddess Lakshmi, Lord Ganesh and Goddess Saraswati. Designed in an elegant premium presentation box with intricate detailing and rich finishes, this collection combines tradition with contemporary gifting.</p>
+  <p class="copy"><strong>Perfect for:</strong> Diwali, Dhanteras, housewarming, business inaugurations, corporate gifting, employee appreciation and milestone celebrations.</p>
+  <div class="collection-grid">
+    <article class="card"><img src="products/product-01.png" alt="Prosperity Collection"><div class="card-body"><h3>Prosperity</h3><p>Lakshmi · Ganesh · Saraswati</p></div></article>
+    <article class="card"><img src="products/product-02.png" alt="Prosperity Collection detail"><div class="card-body"><h3>A premium expression</h3><p>Blessings, gratitude and good wishes.</p></div></article>
+  </div>
+  <div class="marketing"><span>Marketing Copy</span>Give a gift that carries meaning. Prosperity, wisdom and new beginnings — beautifully brought together in one timeless keepsake.</div>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Collection 02</div>
+  <h2>Shubh Labh <em>Prosperity.</em></h2>
+  <p class="copy"><strong>Auspicious Beginnings. Prosperity. Success.</strong><br><br>Created around the traditional symbolism of Lord Ganesh, Goddess Lakshmi, Shubh Labh and sacred Yantra-inspired elements, this premium collection is designed to celebrate new beginnings and meaningful milestones.</p>
+  <p class="copy">Presented in an elegant handcrafted-style box with rich red interiors, gold-finish detailing and devotional artwork, it makes a distinctive choice for both personal and corporate gifting.</p>
+  <div class="collection-grid">
+    <article class="card"><img src="products/product-03.png" alt="Shubh Labh Collection"><div class="card-body"><h3>Shubh Labh</h3><p>Ganesh · Lakshmi · Auspicious beginnings</p></div></article>
+    <article class="card"><img src="products/product-04.png" alt="Shubh Labh Collection detail"><div class="card-body"><h3>Every new beginning</h3><p>A thoughtful gift for businesses, relationships and new beginnings.</p></div></article>
+  </div>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Ganesh · Lakshmi</div>
+  <h2>Shree Ganesh <em>Lakshmi.</em></h2>
+  <p class="copy"><strong>Auspicious Beginnings · Prosperity · Success</strong><br><br>A timeless pairing of Lord Ganesh and Goddess Lakshmi, traditionally associated with auspicious beginnings and prosperity. This collection brings together devotional symbolism and premium craftsmanship in a sophisticated gifting format.</p>
+  <p class="copy">Available in 3D presentation boxes as well as gold &amp; silver plated deity formats.</p>
+  <div class="collection-grid">
+    <article class="card"><img src="products/product-05.png" alt="Ganesh Lakshmi 3D Presentation Box"><div class="card-body"><h3>Ganesh–Lakshmi 3D</h3><p>Auspiciousness, beautifully presented.</p></div></article>
+    <article class="card"><img src="products/product-06.png" alt="Gold and Silver Plated Ganesh Lakshmi"><div class="card-body"><h3>Gold &amp; Silver Plated</h3><p>Timeless symbols. Refined craftsmanship.</p></div></article>
+  </div>
+  <div class="marketing"><span>Catalogue Copy</span>Where every new beginning meets prosperity.<br><br>A timeless expression of auspiciousness and good wishes.</div>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Collection 03</div>
+  <h2>Radha Krishna <em>Divine Harmony.</em></h2>
+  <p class="copy"><strong>Love. Harmony. Togetherness.</strong><br><br>Inspired by the timeless imagery of Radha and Krishna, this collection transforms a traditional expression of devotion into an elegant keepsake for life's most meaningful relationships.</p>
+  <p class="copy">Perfect for: Weddings, engagements, anniversaries, housewarming, family celebrations, couple gifting and premium personal gifting.</p>
+  <div class="collection-grid">
+    <article class="card"><img src="products/product-07.png" alt="Radha Krishna collection"><div class="card-body"><h3>Divine Harmony</h3><p>Love · Harmony · Togetherness</p></div></article>
+    <article class="card"><img src="products/product-08.png" alt="Radha Krishna detail"><div class="card-body"><h3>A gift that speaks</h3><p>Beyond words.</p></div></article>
+  </div>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Collection 04</div>
+  <h2>Ganeshji — <em>Auspicious Beginnings.</em></h2>
+  <p class="copy"><strong>Wisdom · Prosperity · New Beginnings</strong><br><br>Lord Ganesh is traditionally associated with auspicious beginnings, wisdom and the removal of obstacles. Our Ganeshji collection brings this timeless symbolism into an elegant gifting format, combining traditional devotion with refined craftsmanship.</p>
+  <p class="copy">Available in both 3D premium presentation boxes and gold &amp; silver plated deity formats.</p>
+  <div class="collection-grid">
+    <article class="card"><img src="products/product-09.png" alt="Ganeshji 3D Presentation Box"><div class="card-body"><h3>Ganeshji 3D</h3><p>A blessing in three dimensions.</p></div></article>
+    <article class="card"><img src="products/product-10.png" alt="Gold and Silver Plated Ganeshji"><div class="card-body"><h3>Gold &amp; Silver Plated</h3><p>Timeless devotion. Refined craftsmanship.</p></div></article>
+  </div>
+  <div class="marketing"><span>Marketing Copy</span>Every new beginning deserves a blessing. Celebrate life's milestones with the timeless presence of Ganeshji — beautifully crafted and thoughtfully presented.</div>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Collection 05</div>
+  <h2>Shrinathji — <em>Divine Grace.</em></h2>
+  <p class="copy"><strong>Devotion · Grace · Prosperity</strong><br><br>Inspired by the revered form of Shrinathji, this collection celebrates devotion, artistic beauty and the richness of Indian spiritual tradition.</p>
+  <p class="copy">From intricately designed 3D presentation boxes to elegant gold and silver plated deity pieces, each creation is designed to bring together devotional significance and premium presentation.</p>
+  <div class="collection-grid">
+    <article class="card"><img src="products/product-11.png" alt="Shrinathji 3D Presentation Box"><div class="card-body"><h3>Shrinathji 3D</h3><p>Divine grace in every detail.</p></div></article>
+    <article class="card"><img src="products/product-12.png" alt="Gold and Silver Plated Shrinathji"><div class="card-body"><h3>Gold &amp; Silver Plated</h3><p>Devotion in a timeless finish.</p></div></article>
+  </div>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Collection 07</div>
+  <h2>Kuber Lakshmi <em>Prosperity.</em></h2>
+  <p class="copy"><strong>Abundance · Prosperity · Good Fortune</strong><br><br>Inspired by the traditional association of Lord Kuber with wealth and Goddess Lakshmi with prosperity, this collection presents an elegant interpretation of two iconic symbols of abundance.</p>
+  <p class="copy">Created for occasions where success, prosperity and new beginnings are celebrated, the collection combines traditional inspiration with a premium contemporary presentation.</p>
+  <div class="collection-grid">
+    <article class="card"><img src="products/product-13.png" alt="Kuber Lakshmi collection"><div class="card-body"><h3>Kuber · Lakshmi</h3><p>A celebration of prosperity and abundance.</p></div></article>
+    <article class="card"><img src="products/product-14.png" alt="Kuber Lakshmi detail"><div class="card-body"><h3>Celebrate Prosperity</h3><p>Gift Meaning.</p></div></article>
+  </div>
+  <div class="marketing"><span>Corporate Copy</span>A premium expression of prosperity for the relationships that matter. Curated Kuber–Lakshmi gifting for clients, partners and leadership.</div>
+</section>
+
+<section class="wrap collection">
+  <div class="label">Formats</div>
+  <h2>Two ways to make a blessing <em>memorable.</em></h2>
+  <div class="format">
+    <div><h4>3D Presentation Boxes</h4><p>Beautifully detailed devotional compositions presented as premium keepsakes — designed for festive gifting, milestones, corporate occasions and meaningful relationships.</p></div>
+    <div><h4>Gold &amp; Silver Plated Deities</h4><p>Refined devotional pieces combining traditional symbolism with sophisticated finishing, designed to be gifted, displayed and cherished.</p></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="eyebrow">Corporate Gifting</div>
+  <h2>Make corporate gifting<br><em>more meaningful.</em></h2>
+  <p>Thoughtfully curated devotional keepsakes for clients, employees, channel partners, dealers, leadership teams and business milestones — with options for premium presentation and corporate personalisation.</p>
+  <a class="btn btn-gold" href="index.html#contact">Discuss your requirement</a>
+</section>
+</main>
+
+<footer class="footer">
+  <img src="Primary logo with tagline.png" alt="Aashirwadam Creations">
+  <p>Tradition. Craftsmanship. Emotion.</p>
+  <p>+91 99677 82708 · Support@aashirwadam.in</p>
+</footer>
+</body>
+</html>
