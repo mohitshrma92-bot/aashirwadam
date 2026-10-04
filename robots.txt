@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.aashirwadam.in/sitemap.xml
+Sitemap: https://aashirwadam.in/sitemap.xml
