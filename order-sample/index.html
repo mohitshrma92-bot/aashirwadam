@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Order a Sample | Aashirwadam Creations</title><meta name="description" content="Order a paid sample of any Aashirwadam gold and silver plated puja box. Rs. 600 + 18% GST + Rs. 100 courier. Pan India delivery. Logo option available."><link rel="canonical" href="https://aashirwadam.in/order-sample/">
-<meta name="theme-color" content="#3B0D15"><meta property="og:type" content="website"><meta property="og:site_name" content="Aashirwadam Creations"><meta property="og:title" content="Order a Sample | Aashirwadam Creations"><meta property="og:description" content="Order a paid sample of any Aashirwadam gold and silver plated puja box. Rs. 600 + 18% GST + Rs. 100 courier. Pan India delivery. Logo option available."><meta property="og:url" content="https://aashirwadam.in/order-sample/"><meta property="og:image" content="https://aashirwadam.in/images/collections/covers/classique.webp"><meta name="twitter:card" content="summary_large_image">
+<title>Order a Sample | Aashirwadam Creations</title><meta name="description" content="Order a paid sample of any Aashirwadam gold and silver plated puja box. from Rs. 631 including GST and courier. Pan India delivery. Logo option available."><link rel="canonical" href="https://aashirwadam.in/order-sample/">
+<meta name="theme-color" content="#3B0D15"><meta property="og:type" content="website"><meta property="og:site_name" content="Aashirwadam Creations"><meta property="og:title" content="Order a Sample | Aashirwadam Creations"><meta property="og:description" content="Order a paid sample of any Aashirwadam gold and silver plated puja box. from Rs. 631 including GST and courier. Pan India delivery. Logo option available."><meta property="og:url" content="https://aashirwadam.in/order-sample/"><meta property="og:image" content="https://aashirwadam.in/images/collections/covers/classique.webp"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/collections.css"><script async src="https://www.googletagmanager.com/gtag/js?id=G-29V3GBSX8H"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-29V3GBSX8H");</script></head><body>
 <header id="hd"><div class="wrap bar"><button class="menu-btn" id="mo" type="button">Menu</button><a class="brand" href="/" aria-label="Aashirwadam Creations"><img class="lg-l" src="/images/logo-maroon.webp" width="520" height="160" alt="Aashirwadam Creations"><img class="lg-d" src="/images/logo-gold.webp" width="480" height="116" alt=""></a><a class="enq" href="/#contact">Enquire Now</a></div></header>
 <nav class="overlay" id="ov" aria-label="Main"><button class="close" id="mc" type="button">Close</button>
@@ -18,8 +18,8 @@
 <button class="btn" type="submit">Send on WhatsApp</button>
 <p class="hint">Nothing is charged here. We reply on WhatsApp with the payment details.</p>
 </form></div>
-<aside class="os-side"><div class="box"><div class="label">Sample price</div>
-<table class="pt"><tr><td>Sample</td><td>₹600</td></tr><tr><td>GST (18%)</td><td>₹108</td></tr><tr><td>Courier</td><td>₹100</td></tr><tr class="tot"><td>Total</td><td>₹808</td></tr></table></div>
+<aside class="os-side"><div class="box"><div class="label">Sample price by collection</div>
+<table class="pt rate"><thead><tr><th>Collection</th><th>Sample</th><th>GST 18%</th><th>Courier</th><th>Total</th></tr></thead><tbody><tr data-c="new-collection"><td>New Collection</td><td>₹625</td><td>₹112.50</td><td>₹100</td><td>₹837.50</td></tr><tr data-c="classique"><td>Classique</td><td>₹650</td><td>₹117</td><td>₹100</td><td>₹867</td></tr><tr data-c="deluxe"><td>Deluxe</td><td>₹610</td><td>₹109.80</td><td>₹100</td><td>₹819.80</td></tr><tr data-c="marvel"><td>Marvel</td><td>₹650</td><td>₹117</td><td>₹100</td><td>₹867</td></tr><tr data-c="corporate"><td>Corporate</td><td>₹850</td><td>₹153</td><td>₹150</td><td>₹1153</td></tr><tr data-c="humsafar"><td>Humsafar</td><td>₹600</td><td>₹108</td><td>₹100</td><td>₹808</td></tr><tr data-c="yantram"><td>Yantram</td><td>₹450</td><td>₹81</td><td>₹100</td><td>₹631</td></tr></tbody></table><p class="hint" id="sel-price" hidden></p></div>
 <div class="box"><div class="label">Delivery</div><p>Pan India service.<br>Metro cities: 2–3 days.<br>Other locations: 5–8 days, depending on place and distance.</p></div>
 <div class="box"><div class="label">How it works</div><ol><li>Choose a design and fill in your details.</li><li>Send the pre-filled message on WhatsApp.</li><li>We reply with bank / UPI details. Share your logo if needed.</li><li>Pay, send the screenshot, and we dispatch.</li></ol></div></aside>
 </div></main>
@@ -31,6 +31,10 @@
 <script src="/js/collections.js" defer></script><script>(function(){
 var f=document.getElementById('osf'),d=document.getElementById('f-d'),err=document.getElementById('err');
 var q=new URLSearchParams(location.search).get('d');if(q){try{d.value=q}catch(e){}}
+var PR={'new-collection':[625,100],'classique':[650,100],'deluxe':[610,100],'marvel':[650,100],'corporate':[850,150],'humsafar':[600,100],'yantram':[450,100]};
+function priceLine(v){var c=v.split('/')[0],p=PR[c];if(!p)return 'price to be confirmed for a custom design';var g=Math.round(p[0]*18)/100,t=Math.round((p[0]*1.18+p[1])*100)/100;return 'Rs. '+p[0]+' + 18% GST + Rs. '+p[1]+' courier = Rs. '+(t%1?t.toFixed(2):t)}
+function hi(){var c=d.value.split('/')[0],sp=document.getElementById('sel-price');[].forEach.call(document.querySelectorAll('.rate tbody tr'),function(r){r.className=r.dataset.c===c?'on':''});if(PR[c]){sp.hidden=false;sp.textContent='Your sample: '+priceLine(d.value)}else{sp.hidden=true}}
+d.addEventListener('change',hi);hi();
 var h=document.getElementById('logo-hint');
 [].forEach.call(f.elements.logo,function(r){r.addEventListener('change',function(){h.hidden=f.elements.logo.value!=='Yes'})});
 f.addEventListener('submit',function(e){e.preventDefault();
@@ -39,8 +43,8 @@ f.addEventListener('submit',function(e){e.preventDefault();
  if(miss.length){err.textContent='Please add '+miss[0][1]+'.';err.hidden=false;document.getElementById(miss[0][0]).focus();return}
  if(!/^[0-9]{6}$/.test(v('f-z'))){err.textContent='Pincode should be 6 digits.';err.hidden=false;document.getElementById('f-z').focus();return}
  err.hidden=true;
- var dn=d.options[d.selectedIndex],dg=dn.parentNode.label?dn.text+' ('+dn.parentNode.label+' collection)':dn.text;
- var m='Hello Aashirwadam, I would like to order a paid sample (Rs. 600 + 18% GST + Rs. 100 courier = Rs. 808).\n\nDesign: '+dg+'\nLogo on box: '+f.elements.logo.value+'\nName: '+v('f-n')+'\nPhone: '+v('f-p')+'\nAddress: '+v('f-a')+', '+v('f-c')+' - '+v('f-z')+(v('f-t')?'\nNote: '+v('f-t'):'')+'\n\nPlease share the payment details.';
+ var dn=d.options[d.selectedIndex];var pl=priceLine(d.value),dg=dn.parentNode.label?dn.text+' ('+dn.parentNode.label+' collection)':dn.text;
+ var m='Hello Aashirwadam, I would like to order a paid sample ('+pl+').\n\nDesign: '+dg+'\nLogo on box: '+f.elements.logo.value+'\nName: '+v('f-n')+'\nPhone: '+v('f-p')+'\nAddress: '+v('f-a')+', '+v('f-c')+' - '+v('f-z')+(v('f-t')?'\nNote: '+v('f-t'):'')+'\n\nPlease share the payment details.';
  try{if(window.gtag)gtag('event','sample_order_whatsapp',{design:d.value})}catch(x){}
  window.open('https://wa.me/919967782708?text='+encodeURIComponent(m),'_blank','noopener');
 });})();</script></body></html>
