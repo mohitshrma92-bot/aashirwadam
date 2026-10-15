@@ -17,6 +17,7 @@ function show(i,v){
  img.alt=d.name+(view==='box'?' packaging':'');
  cap.textContent=d.name;sub.textContent=d.series||'';
  wa.href=d.wa;
+ var os=document.getElementById('lb-os');if(os)os.href='/order-sample/?d='+d.cat+'/'+d.slug;
  th.innerHTML='';
  if(hasBox){[['main','Opened box'],['box','Packaging']].forEach(function(p){
   var b=document.createElement('button');b.type='button';b.textContent=p[1];if(view===p[0])b.className='on';
