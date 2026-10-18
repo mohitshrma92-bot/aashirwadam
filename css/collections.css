@@ -202,3 +202,4 @@ html{-webkit-tap-highlight-color:transparent}
 .empty{text-align:center;padding:48px 0;color:var(--muted);margin:0 auto}.empty a{border-bottom:1px solid var(--gold)}
 @media (max-width:560px){.tools .search{flex:1 1 100%}.tools select{flex:1 1 calc(50% - 6px)}.tools .res{margin-left:0;flex:1 1 100%}}
 @media (display-mode:standalone){.dh{display:none}:root{--dh:0px}}
+.os .box.adj{border-color:var(--gold);background:rgba(212,175,124,.16)}.os .box.adj p{color:var(--ink)}.os .note-adj{padding:12px 14px;border-left:3px solid var(--gold);background:var(--bg2);color:var(--ink)}

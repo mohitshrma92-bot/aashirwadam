@@ -17,11 +17,11 @@
 <label>Note (optional)<input id="f-t"></label>
 <p class="err" id="err" role="alert" hidden></p>
 <button class="btn" type="submit">Send on WhatsApp</button>
-<p class="hint">Nothing is charged here. We reply on WhatsApp with the payment details.</p>
+<p class="hint note-adj"><b>Note:</b> Sample cost is adjustable against your bulk order. Once you book a bulk order, your sample is counted at the bulk order rate, and the difference amount is discounted / adjusted in your bulk order rate or amount.</p><p class="hint">Nothing is charged here. We reply on WhatsApp with the payment details.</p>
 </form></div>
 <aside class="os-side"><div class="box"><div class="label">Sample price by collection</div>
 <table class="pt rate"><thead><tr><th>Collection</th><th>Sample</th><th>GST 18%</th><th>Courier</th><th>Total</th></tr></thead><tbody><tr data-c="new-collection"><td>New Collection</td><td>₹625</td><td>₹112.50</td><td>₹100</td><td>₹837.50</td></tr><tr data-c="classique"><td>Classique</td><td>₹650</td><td>₹117</td><td>₹100</td><td>₹867</td></tr><tr data-c="deluxe"><td>Deluxe</td><td>₹610</td><td>₹109.80</td><td>₹100</td><td>₹819.80</td></tr><tr data-c="marvel"><td>Marvel</td><td>₹650</td><td>₹117</td><td>₹100</td><td>₹867</td></tr><tr data-c="corporate"><td>Corporate</td><td>₹850</td><td>₹153</td><td>₹150</td><td>₹1153</td></tr><tr data-c="humsafar"><td>Humsafar</td><td>₹600</td><td>₹108</td><td>₹100</td><td>₹808</td></tr><tr data-c="yantram"><td>Yantram</td><td>₹450</td><td>₹81</td><td>₹100</td><td>₹631</td></tr></tbody></table><p class="hint" id="sel-price" hidden></p></div>
-<div class="box"><div class="label">Bulk orders</div><p>Minimum order quantity (MOQ) is 120 pieces per design. A single sample is available before you order in bulk.</p></div><div class="box"><div class="label">Delivery</div><p>Pan India service.<br>Metro cities: 2–3 days.<br>Other locations: 5–8 days, depending on place and distance.</p></div>
+<div class="box adj"><div class="label">Sample adjustment</div><p><b>Sample cost is adjustable against your bulk order.</b> Once you book a bulk order, your sample is counted at the bulk order rate, and the difference amount is discounted / adjusted in your bulk order rate or amount.</p></div><div class="box"><div class="label">Bulk orders</div><p>Minimum order quantity (MOQ) is 120 pieces per design. A single sample is available before you order in bulk.</p></div><div class="box"><div class="label">Delivery</div><p>Pan India service.<br>Metro cities: 2–3 days.<br>Other locations: 5–8 days, depending on place and distance.</p></div>
 <div class="box"><div class="label">How it works</div><ol><li>Choose a design and fill in your details.</li><li>Send the pre-filled message on WhatsApp.</li><li>We reply with bank / UPI details. Share your logo if needed.</li><li>Pay, send the screenshot, and we dispatch.</li></ol></div></aside>
 </div></main>
 <footer><div class="wrap"><div><img class="flogo lg-l" src="/images/logo-maroon.webp" width="520" height="160" alt="Aashirwadam Creations" loading="lazy"><img class="flogo lg-d" src="/images/logo-gold.webp" width="480" height="116" alt="" loading="lazy">Tradition. Craftsmanship. Emotion.</div>
@@ -46,7 +46,7 @@ f.addEventListener('submit',function(e){e.preventDefault();
  if(!/^[0-9]{6}$/.test(v('f-z'))){err.textContent='Pincode should be 6 digits.';err.hidden=false;document.getElementById('f-z').focus();return}
  err.hidden=true;
  var dn=d.options[d.selectedIndex];var pl=priceLine(d.value),dg=dn.parentNode.label?dn.text+' ('+dn.parentNode.label+' collection)':dn.text;
- var m='Hello Aashirwadam, I would like to order a paid sample ('+pl+').\n\nDesign: '+dg+'\nLogo on box: '+f.elements.logo.value+'\nName: '+v('f-n')+'\nPhone: '+v('f-p')+'\nAddress: '+v('f-a')+', '+v('f-c')+' - '+v('f-z')+(v('f-t')?'\nNote: '+v('f-t'):'')+'\n\nPlease share the payment details.';
+ var m='Hello Aashirwadam, I would like to order a paid sample ('+pl+').\n\nDesign: '+dg+'\nLogo on box: '+f.elements.logo.value+'\nName: '+v('f-n')+'\nPhone: '+v('f-p')+'\nAddress: '+v('f-a')+', '+v('f-c')+' - '+v('f-z')+(v('f-t')?'\nNote: '+v('f-t'):'')+'\n\nPlease share the payment details. (Sample cost is adjustable against a bulk order.)';
  try{if(window.gtag)gtag('event','sample_order_whatsapp',{design:d.value})}catch(x){}
  window.open('https://wa.me/919967782708?text='+encodeURIComponent(m),'_blank','noopener');
 });})();</script></body></html>
