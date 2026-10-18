@@ -158,3 +158,4 @@ html.nodh .dh{display:none}
 @media (prefers-reduced-motion:reduce){.dh-m{animation:none!important}.dh-m>span+span{display:none!important}.dh-a{overflow:hidden;text-overflow:ellipsis}}
 .offer{margin:22px 0 0!important;padding:14px 18px;border:1px solid rgba(212,175,124,.6);background:rgba(212,175,124,.12);color:#F7F1E6!important;font-size:15px!important;max-width:62ch}.offer a{border-bottom:1px solid #D4AF7C;color:#D8BE84}
 .card .moq{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+footer .copy{flex:0 0 100%;max-width:none;margin:8px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.04em}
