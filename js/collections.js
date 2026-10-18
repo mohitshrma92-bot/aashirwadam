@@ -3,9 +3,10 @@ var ov=document.getElementById('ov');
 var mo=document.getElementById('mo'),mc=document.getElementById('mc');
 if(mo&&ov){mo.onclick=function(){ov.classList.add('open')};mc.onclick=function(){ov.classList.remove('open')};
 ov.querySelectorAll('a').forEach(function(a,i){a.style.transitionDelay=(i*0.05)+'s';a.addEventListener('click',function(){ov.classList.remove('open')})})}
-var cards=[].slice.call(document.querySelectorAll('[data-main]'));
+function list(){return [].slice.call(document.querySelectorAll('[data-main]')).filter(function(e){return !e.closest('[hidden]')})}
+var cards=list();
 var lb=document.getElementById('lb');
-if(!lb||!cards.length)return;
+if(!lb)return;
 var img=document.getElementById('lb-img'),cap=document.getElementById('lb-cap'),sub=document.getElementById('lb-sub'),
 th=document.getElementById('lb-th'),wa=document.getElementById('lb-wa');
 var cur=0,view='main',lastFocus=null;
@@ -24,9 +25,9 @@ function show(i,v){
   b.onclick=function(){show(cur,p[0])};th.appendChild(b)})}
  try{history.replaceState(null,'','#'+d.slug)}catch(e){}
 }
-function open(i,v){lastFocus=document.activeElement;lb.classList.add('open');document.body.style.overflow='hidden';show(i,v);lb.querySelector('.lb-x').focus()}
+function open(i,v){cards=list();lastFocus=document.activeElement;lb.classList.add('open');document.body.style.overflow='hidden';show(i,v);lb.querySelector('.lb-x').focus()}
 function close(){lb.classList.remove('open');document.body.style.overflow='';try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}if(lastFocus)lastFocus.focus()}
-cards.forEach(function(c,i){c.addEventListener('click',function(e){e.preventDefault();open(i)})});
+[].slice.call(document.querySelectorAll('[data-main]')).forEach(function(c){c.addEventListener('click',function(e){e.preventDefault();cards=list();open(cards.indexOf(c))})});
 lb.querySelector('.lb-x').onclick=close;
 lb.querySelector('.prev').onclick=function(){show(cur-1)};
 lb.querySelector('.next').onclick=function(){show(cur+1)};
