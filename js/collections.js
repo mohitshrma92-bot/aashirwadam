@@ -3,6 +3,9 @@ var ov=document.getElementById('ov');
 var mo=document.getElementById('mo'),mc=document.getElementById('mc');
 if(mo&&ov){mo.onclick=function(){ov.classList.add('open')};mc.onclick=function(){ov.classList.remove('open')};
 ov.querySelectorAll('a').forEach(function(a,i){a.style.transitionDelay=(i*0.05)+'s';a.addEventListener('click',function(){ov.classList.remove('open')})})}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a||!window.gtag)return;var h=a.getAttribute('href')||'';
+ if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{link_text:(a.textContent||'').trim().slice(0,40),page_path:location.pathname});
+ else if(h.indexOf('/order-sample/')>-1)gtag('event','order_sample_click',{link_text:(a.textContent||'').trim().slice(0,40),page_path:location.pathname})});
 function list(){return [].slice.call(document.querySelectorAll('[data-main]')).filter(function(e){return !e.closest('[hidden]')})}
 var cards=list();
 var lb=document.getElementById('lb');
@@ -18,6 +21,7 @@ function show(i,v){
  img.alt=d.name+(view==='box'?' packaging':'');
  cap.textContent=d.name;sub.textContent=d.series||'';
  wa.href=d.wa;
+ var ld=document.getElementById('lb-d');if(ld&&d.href)ld.href=d.href;
  var os=document.getElementById('lb-os');if(os)os.href='/order-sample/?d='+d.cat+'/'+d.slug;
  th.innerHTML='';
  if(hasBox){[['main','Opened box'],['box','Packaging']].forEach(function(p){

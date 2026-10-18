@@ -335,5 +335,5 @@ document.addEventListener('visibilitychange',function(){document.hidden?stop():p
 go(0);play();
 })();
 </script>
-<script>(function(){var b=document.getElementById("dh-x");if(b)b.onclick=function(){document.documentElement.classList.add("nodh");try{sessionStorage.setItem("dhx","1")}catch(e){}}})();</script></body>
+<script>(function(){var b=document.getElementById("dh-x");if(b)b.onclick=function(){document.documentElement.classList.add("nodh");try{sessionStorage.setItem("dhx","1")}catch(e){}}})();</script><script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a||!window.gtag)return;var h=a.getAttribute('href')||'';if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{link_text:(a.textContent||'').trim().slice(0,40),page_path:location.pathname});else if(h.indexOf('order-sample')>-1)gtag('event','order_sample_click',{link_text:(a.textContent||'').trim().slice(0,40),page_path:location.pathname})});</script></body>
 </html>
