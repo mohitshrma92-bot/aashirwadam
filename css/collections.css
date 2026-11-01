@@ -228,3 +228,4 @@ html{-webkit-tap-highlight-color:transparent}
 .faq summary{cursor:pointer;font-family:var(--serif);font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .faq summary::after{content:"+";color:var(--gold-t)}.faq details[open] summary::after{content:"–"}
 .faq summary::-webkit-details-marker{display:none}.faq details p{margin:12px 0 0}
+.social{display:flex;gap:10px;margin-top:12px}.social a{display:flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;color:var(--ink)}.social a:hover{border-color:var(--gold);color:var(--gold-t)}.social svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.social path{fill:currentColor;stroke:none}
